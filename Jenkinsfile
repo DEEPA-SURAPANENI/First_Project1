@@ -6,7 +6,7 @@ pipeline {
    stages {
       stage("git clone") {
               steps {
-                 git 'https://github.com/DEEPA-SURAPANENI/First_Project1.git'
+                 git branch: 'master', url: 'https://github.com/DEEPA-SURAPANENI/First_Project1.git'
                }
       }
       stage("build") {
