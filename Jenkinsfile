@@ -3,9 +3,8 @@ pipeline {
    tools {
       maven 'Maven'
    }
-   parameters {
-      booleanParam(name: 'executeTests', defaultValue: true, description: '')
-   }
+   parameters(
+      booleanParam(name: 'executeTests', defaultValue: true, description: ''))
    stages {
       stage("git clone") {
               steps {
