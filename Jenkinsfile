@@ -4,7 +4,7 @@ pipeline {
       maven 'Maven'
    }
    parameters {
-      booleanParam(name: 'executeTests', defaultValue: true, description:'')
+      booleanParam(name: 'executeTests', defaultValue: true, description: '')
    }
    stages {
       stage("git clone") {
@@ -20,7 +20,7 @@ pipeline {
       stage("test") {
          when {
             expression {
-            param.executeTests
+            param.executeTests == true
             }
          }
          steps {
