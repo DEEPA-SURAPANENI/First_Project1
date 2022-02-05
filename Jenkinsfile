@@ -1,15 +1,19 @@
 pipeline {
    agent any 
+   tools {
+      maven 'Maven'
+   }
    stages {
+      stage("git clone") {
+              steps {
+                 git 'https://github.com/DEEPA-SURAPANENI/First_Project1.git'
+               }
+      }
       stage("build") {
-         when {
-            expression {
-               BRANCH_NAME == 'master'
+            steps {
+               sh "mvn compile"
             }
          }
-      steps {
-      echo "My first build through jenkinsfile from master branch"
       }
-     }
    }
- }
+}
