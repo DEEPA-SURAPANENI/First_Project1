@@ -18,10 +18,12 @@ pipeline {
             }
          }
       stage("test") {
+         steps {
          when{
             expression {
             param.executeTests
             }
+         }
          }
       }
       stage('deploy') {
