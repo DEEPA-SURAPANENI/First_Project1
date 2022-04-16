@@ -1,3 +1,2 @@
-FROM openjdk
-COPY target/*.war .
-ENTRYPOINT ["java", "-jar", "myProject.war"]
+FROM tomcat
+COPY target/*.war /usr/local/tomcat/webapps/
