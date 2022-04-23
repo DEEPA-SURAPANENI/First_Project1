@@ -72,10 +72,4 @@
     </pluginManagement>
  
   </build>
-  <distributionManagement>
-    <snapshotRepository>
-      <id>s3-myaws-jenkins</id>
-      <url>s3://s3-myaws-jenkins/</url>
-    </snapshotRepository>
-   </distributionManagement>
 </project>
