@@ -74,8 +74,8 @@
   </build>
   <distributionManagement>
     <snapshotRepository>
-      <id>deployment</id>
-      <url>s3://s3-jenkins-maven-repo/</url>
+      <id>s3-myaws-jenkins</id>
+      <url>s3://s3-myaws-jenkins/</url>
     </snapshotRepository>
    </distributionManagement>
 </project>
