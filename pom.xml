@@ -31,9 +31,9 @@
   <build>
      <extensions>
       <extension>
-    <groupId>com.amazonaws</groupId>
-    <artifactId>aws-java-sdk-s3</artifactId>
-    <version>1.12.204</version>
+      <groupId>com.github.platform-team</groupId>
+      <artifactId>aws-maven</artifactId>
+      <version>6.0.0</version>
       </extension>
     </extensions>
         <finalName>myProject</finalName>
