@@ -63,11 +63,18 @@
         </plugin>
       </plugins>
     </pluginManagement>
+            <extensions>
+            <extension>
+                <groupId>com.github.seahen</groupId>
+                <artifactId>maven-s3-wagon</artifactId>
+                <version>3.8.0</version>
+            </extension>
+        </extensions>
   </build>
   <distributionManagement>
     <snapshotRepository>
       <id>deployment</id>
-      <url>http://3.110.188.160:8081/repository/maven-snapshots</url>
+      <url>s3://s3-jenkins-maven-repo/snapshot</url>
     </snapshotRepository>
    </distributionManagement>
 </project>
