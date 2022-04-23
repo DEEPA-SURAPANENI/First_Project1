@@ -31,9 +31,9 @@
   <build>
      <extensions>
       <extension>
-        <groupId>org.kuali.maven.wagons</groupId>
-        <artifactId>maven-s3-wagon</artifactId>
-        <version>1.2.1</version>
+    <groupId>com.amazonaws</groupId>
+    <artifactId>aws-java-sdk-s3</artifactId>
+    <version>1.12.204</version>
       </extension>
     </extensions>
         <finalName>myProject</finalName>
