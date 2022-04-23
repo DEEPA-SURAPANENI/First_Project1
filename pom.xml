@@ -34,6 +34,14 @@
   </dependencies>
 
   <build>
+    
+            <extensions>
+            <extension>
+                <groupId>com.github.seahen</groupId>
+                <artifactId>maven-s3-wagon</artifactId>
+                <version>3.8.0</version>
+            </extension>
+        </extensions>
         <finalName>myProject</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
