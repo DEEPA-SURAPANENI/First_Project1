@@ -75,7 +75,7 @@
   <distributionManagement>
     <snapshotRepository>
       <id>deployment</id>
-      <url>s3://s3-jenkins-maven-repo/snapshot</url>
+      <url>s3://s3-jenkins-maven-repo/</url>
     </snapshotRepository>
    </distributionManagement>
 </project>
