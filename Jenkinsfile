@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Docker username is $DOCKER_ACCESS"
+                echo "Docker username is $DOCKER_ACCESS_USR"
             }
         }
     }
