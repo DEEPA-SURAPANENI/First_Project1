@@ -14,10 +14,5 @@ pipeline {
                sh "mvn compile install package"
             }
          }
-      stage('deploy') {
-         steps {
-            deploy adapters: [tomcat8(credentialsId: 'tomcat', path: '', url: 'http://13.233.150.243:8080/')], contextPath: null, war: 'target/*war'
-         }
-      }
       }
    }
