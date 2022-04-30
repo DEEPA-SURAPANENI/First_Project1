@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello, Welcome to NexusTomcat</h2>
+<h2>Hello, Welcome to Jenkins Tomcat</h2>
 </body>
 </html>
